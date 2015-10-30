@@ -7,4 +7,4 @@ So far supports only one external connection before skipping on RPi B+.
 docker run -d -p 8080:8080 -p 8000:8000 -v /path/to/music:/var/lib/mpd/music --name mpd a0js/rpi-mpd-ympd
 ```
 ## Gotchas
-USB drives fromatted for windows (NTFS) requires `ntfs-3g` package to mount correctly
+USB drives fromatted for windows (NTFS) requires `ntfs-3g` package to mount correctly on the rpi host machine.

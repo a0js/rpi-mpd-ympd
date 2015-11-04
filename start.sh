@@ -7,4 +7,4 @@ fi
 sed -i "s/{{encoder}}/${ENCODER}/g" /etc/mpd.conf
 
 mpd
-./ympd
+ympd

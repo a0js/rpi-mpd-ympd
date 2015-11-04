@@ -1,20 +1,11 @@
-FROM resin/rpi-raspbian
+FROM hypriot/rpi-alpine-scratch
 MAINTAINER Ammon Sarver <manofarms@gmail.com>
 
-RUN apt-get -qq update --fix-missing \
-  && apt-get install \
-  --no-install-recommends \
-  --no-install-suggests \
-  -y \
+RUN apk update && apk upgrade && apk add \
+  bash \
   sudo \
   mpd \
-  wget \
-  bzip2 \  
-  && rm -rf /var/lib/apt/lists/*
-
-RUN wget http://www.ympd.org/downloads/ympd-1.2.3-armhf.tar.bz2 \
-  && tar -xvf ympd-1.2.3-armhf.tar.bz2 \
-  && rm -rf ympd-1.2.3-armhf.tar.bz2
+  ympd
 
 RUN mkdir -p /var/lib/mpd/music \
   && mkdir -p /var/lib/mpd/playlists \

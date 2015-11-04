@@ -15,7 +15,7 @@ Defaults to `lame` (mp3). See all options in [MPD Docs](http://www.musicpd.org/d
 Point your browser to `http://hostmachine:8080`
 
 ### Listening
-This uses FLAC stream to reduce CPU usage. Open `http://hostmachine:8000` in VLC or other FLAC stream compatible client.
+Open `http://hostmachine:8000` in VLC or other client.
 
 ## Gotchas
 USB drives fromatted for windows (NTFS) requires `ntfs-3g` package to mount correctly on the rpi host machine.
@@ -27,3 +27,5 @@ MP3 - ~60% CPU - 96kb/s stream
 FLAC - ~15% CPU - ~960kb/s stream
 
 If listening outside your home network, your ISP upload speed might not be enough to run FLAC.
+
+Also few clients can play FLAC streams, VLC will work though.

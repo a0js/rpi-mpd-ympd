@@ -23,8 +23,8 @@ USB drives fromatted for windows (NTFS) requires `ntfs-3g` package to mount corr
 Using flac encoder will reduce cpu usage significantly however it will also increase network traffic.
 
 On Raspberry Pi B+
-MP3 - ~60% CPU - 96kb/s stream
-FLAC - ~15% CPU - ~960kb/s stream
+*MP3 - ~60% CPU - 96kb/s stream
+*FLAC - ~15% CPU - ~960kb/s stream
 
 If listening outside your home network, your ISP upload speed might not be enough to run FLAC.
 

@@ -18,7 +18,7 @@ Point your browser to `http://hostmachine:8080`
 Open `http://hostmachine:8000` in VLC or other client.
 
 ## Gotchas
-USB drives fromatted for windows (NTFS) requires `ntfs-3g` package to mount correctly on the rpi host machine.
+USB drives formatted for windows (NTFS) requires `ntfs-3g` package to mount correctly on the rpi host machine.
 
 Using flac encoder will reduce cpu usage significantly however it will also increase network traffic.
 
